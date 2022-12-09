@@ -18,7 +18,6 @@ class HomePostFactory extends Factory
     public function definition()
     {
         return [
-            'id' => fake()->unique()->randomNumber(),
             'title' => fake()->sentence(),
             'description' => fake()->paragraph(),
             'image' => fake()->imageUrl(),

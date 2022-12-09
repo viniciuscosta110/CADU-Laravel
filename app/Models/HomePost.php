@@ -19,7 +19,6 @@ class HomePost extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'id',
         'title',
         'description',
         'image',
