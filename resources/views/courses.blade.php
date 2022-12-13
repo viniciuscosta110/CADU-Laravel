@@ -9,8 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div>
-      <header class="flex flex-row pb-28">
+    <div class="pb-28">
+      <header class="flex flex-row">
         <a href="/">
           <img src="{{ asset('images/green_logo.png') }}" alt="Logo image" class="w-40">
         </a>
