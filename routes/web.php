@@ -15,12 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ResearchController;
+use App\Http\Controllers\TeacherController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/teachers', function () {
-    return view('teachers');
-});
+Route::get('/teachers', [TeacherController::class, 'index']);
 
 Route::get('/researchs', [ResearchController::class, 'index']);
 
