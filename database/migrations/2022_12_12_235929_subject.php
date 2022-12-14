@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('description');
             $table->integer('period');
+            $table->string('course');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });

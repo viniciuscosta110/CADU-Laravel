@@ -17,10 +17,13 @@ class SubjectFactory extends Factory
      */
     public function definition()
     {
+        $courses = ["cc", "ec"];
+        
         return [
             'title' => fake()->sentence(),
             'description' => fake()->paragraph(),
             'period' => fake()->numberBetween(1, 10),
+            'course' => $courses[fake()->numberBetween(0, 1)],
             'created_at' => fake()->dateTime(),
             'updated_at' => fake()->dateTime(),
         ];

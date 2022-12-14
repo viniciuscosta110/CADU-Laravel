@@ -22,6 +22,7 @@ class Subject extends Model
         'title',
         'description',
         'period',
+        'course',
     ];
     
     protected $casts = [
