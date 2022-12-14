@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder
         \App\Models\HomePost::factory(10)->create();
         \App\Models\TeacherPost::factory(10)->create();
         \App\Models\Subject::factory(10)->create();
+        \App\Models\ResearchPost::factory(10)->create();
     }
 }
