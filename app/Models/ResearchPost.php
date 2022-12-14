@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 
-class TeacherPost extends Model
+class ResearchPost extends Model
 {
     use HasFactory;
 
