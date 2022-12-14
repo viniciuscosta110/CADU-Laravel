@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ResearchController;
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\ExtensionController;
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -31,9 +32,7 @@ Route::get('/details', function () {
     return view('details');
 });
 
-Route::get('/extensions', function () {
-    return view('extensions');
-});
+Route::get('/extensions', [ExtensionController::class, 'index']);
 
 Route::get('/login', function () {
     return view('login');
