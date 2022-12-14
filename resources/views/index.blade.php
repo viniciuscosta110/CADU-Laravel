@@ -36,7 +36,6 @@
       </header>
       <div class="mt-[68px] ml-[184px] flex flex-col gap-10">
         @foreach($posts as $post)
-          console.log({{ $post->title }})
           <article class="w-fit px-20 py-7 bg-white flex gap-[140px] rounded-[40px] border-4 border-[#4245DB] items-center">
             <p id="description" class="w-[400px] text-2xl">{{ $post->description }}</p>
             <img src="{{ $post->image }}" alt="${item.alt}" class="w-[200px] h-[200px] rounded-xl">
