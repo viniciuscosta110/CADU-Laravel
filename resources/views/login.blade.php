@@ -31,11 +31,12 @@
     <img src="images/logo.svg" alt="Logo" id="logo" width="150">
   </header>
 
-  <div id="content">
-    <input id="username" type="text" placeholder="Nome do usuário">
-    <input id="password" type="password" placeholder="Senha">
-    <button onclick="loginHandle()" id="login">Login</button>
-  </div>
+  <form action = "/login" method = "POST">
+    @csrf
+    <input id="username" type="text" placeholder="Nome do usuário" name = "username">
+    <input id="password" type="password" placeholder="Senha" name = "password">
+    <input id = "login"  type = "submit" value = "Login">
+</form>
 
   <aside id="lateral">
     <!-- <img src="images/cadu.jpg" alt="Cadu Maverick" id="cadu" /> -->

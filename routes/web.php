@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//importar controllers
+use App\Http\Controllers\loginController;
+
+
 Route::get('/', function () {
     return view('index');
 });
@@ -37,9 +41,8 @@ Route::get('/extensions', function () {
     return view('extensions');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/login', [loginController::class, 'index']);
+Route::post('/login',[loginController::class, 'login']);
 
 Route::get('/subjects', function () {
     return view('subjects');

@@ -21,7 +21,7 @@ div#content {
   margin-top: 15vh;
 }
 
-button#login {
+input#login {
   width: 45rem;
   height: 5rem;
   background-color: #3A9E3E;
