@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//importar controllers
+use App\Http\Controllers\loginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ResearchController;
 use App\Http\Controllers\TeacherController;
@@ -34,9 +36,7 @@ Route::get('/details', function () {
 
 Route::get('/extensions', [ExtensionController::class, 'index']);
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::post('/login',[loginController::class, 'login']);
 
 Route::get('/subjects', function () {
     return view('subjects');
