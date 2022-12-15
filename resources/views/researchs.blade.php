@@ -34,8 +34,15 @@
           </a>
         </nav>
       </header>
-      <div id="content" class="mt-[68px] ml-[184px] mr-[220px] flex flex-col gap-10">
-        
+      <div class="mt-[68px] ml-[184px] mr-[220px] flex flex-col gap-10">
+        @foreach ($researchs as $research)
+        <article class="w-auto px-20 py-7 bg-white flex flex-col rounded-[40px] border-4 border-[#4245DB]">
+          <h1 class="font-bold text-3xl">{{ $research->name }}</h1>
+          <p class="text-2xl">
+            {{ $research->description }}
+          </p>
+        </article>
+        @endforeach
       </div>
     </div>
     <script src="js/researchs.js"></script>

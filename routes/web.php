@@ -15,19 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 //importar controllers
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ResearchController;
+use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\ExtensionController;
 
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/teachers', [TeacherController::class, 'index']);
 
-Route::get('/teachers', function () {
-    return view('teachers');
-});
-
-Route::get('/researchs', function () {
-    return view('researchs');
-});
+Route::get('/researchs', [ResearchController::class, 'index']);
 
 Route::get('/courses', function () {
     return view('courses');
@@ -37,11 +34,8 @@ Route::get('/details', function () {
     return view('details');
 });
 
-Route::get('/extensions', function () {
-    return view('extensions');
-});
+Route::get('/extensions', [ExtensionController::class, 'index']);
 
-Route::get('/login', [loginController::class, 'index']);
 Route::post('/login',[loginController::class, 'login']);
 
 Route::get('/subjects', function () {

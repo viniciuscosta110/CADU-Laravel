@@ -4,12 +4,10 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Subject extends Model
+class ResearchPost extends Model
 {
     use HasFactory;
 
@@ -19,10 +17,10 @@ class Subject extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'title',
+        'name',
         'description',
-        'period',
-        'course',
+        'image',
+        'link',
     ];
     
     protected $casts = [

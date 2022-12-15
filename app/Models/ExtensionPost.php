@@ -9,7 +9,7 @@ use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Subject extends Model
+class ExtensionPost extends Model
 {
     use HasFactory;
 
@@ -21,8 +21,8 @@ class Subject extends Model
     protected $fillable = [
         'title',
         'description',
-        'period',
-        'course',
+        'image',
+        'link',
     ];
     
     protected $casts = [

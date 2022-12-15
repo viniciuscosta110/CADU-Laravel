@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
  */
-class SubjectFactory extends Factory
+class ResearchPostFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,13 +17,11 @@ class SubjectFactory extends Factory
      */
     public function definition()
     {
-        $courses = ["cc", "ec"];
-        
         return [
-            'title' => fake()->sentence(),
+            'name' => fake()->name(),
             'description' => fake()->paragraph(),
-            'period' => fake()->numberBetween(1, 10),
-            'course' => $courses[fake()->numberBetween(0, 1)],
+            'image' => fake()->imageUrl(),
+            'link' => fake()->url(),
             'created_at' => fake()->dateTime(),
             'updated_at' => fake()->dateTime(),
         ];

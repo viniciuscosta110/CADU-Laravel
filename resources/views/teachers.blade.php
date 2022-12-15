@@ -34,10 +34,24 @@
           </a>
         </nav>
       </header>
-      <div id="content" class="mt-[68px] ml-[264px] flex gap-6">
-        
+      <div class="mt-[68px] ml-[264px] flex gap-6">
+        @foreach ($teachers as $teacher)
+        <article class="w-[400px] h-[600px] min-w-[400px] px-20 py-9 bg-white flex flex-col items-center rounded-[40px] border-4 border-[#4245DB]">
+          <div class="flex flex-col gap-[52px] overflow-y-scroll">
+            <div class="w-[200px]">
+              <img src="{{ $teacher->image }}" alt="Imagem de um professor" class="rounded-xl">
+            </div>
+            <h1 class="text-2xl font-bold leading-7">
+              {{ $teacher->name }}
+            </h1>
+            <p class="text-2xl text-left font-bold leading-7 tracking-wide">
+              {{ $teacher->description }}
+            </p>
+          </div>
+        </article>
+        @endforeach
       </div>
     </div>
-    <script src="js/teachers.js"></script>
+    <!-- <script src="js/teachers.js"></script> -->
   </body>
 </html>

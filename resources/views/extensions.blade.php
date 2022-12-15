@@ -34,8 +34,16 @@
           </a>
         </nav>
       </header>
-      <div id="content" class="mt-[68px] ml-[184px] mr-[220px] flex flex-col gap-10">
-        
+      <div class="mt-[68px] ml-[184px] mr-[220px] flex flex-col gap-10">
+        @foreach ($extensions as $extension)
+          <article class="w-fit px-20 py-7 bg-white flex gap-[92px] rounded-[40px] border-4 border-[#4245DB] items-center">
+            <img src="{{ $extension->image }}" alt="Logo do grupo de pesquisa" class="rounded-xl w-[200px] h-[200px]">
+            <div class="flex flex-col gap-4">
+              <h1 class="text-4xl font-bold">{{ $extension->title }}</h1>
+              <p class="text-2xl">{{ $extension->description }}</p>
+            </div>
+          </article>
+        @endforeach
       </div>
     </div>
     <script src="js/extensions.js"></script>
