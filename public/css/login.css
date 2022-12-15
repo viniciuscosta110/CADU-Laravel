@@ -14,7 +14,7 @@ header {
   padding: 48px;
 }
 
-div#content {
+form#content {
   margin-left: 48px;
   display: flex;
   flex-direction: column;

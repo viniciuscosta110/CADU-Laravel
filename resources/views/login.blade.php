@@ -31,7 +31,7 @@
     <img src="images/logo.svg" alt="Logo" id="logo" width="150">
   </header>
 
-  <form action = "/login" method = "POST">
+  <form id="content" action = "/login" method = "POST">
     @csrf
     <input id="username" type="text" placeholder="Nome do usuário" name = "username">
     <input id="password" type="password" placeholder="Senha" name = "password">
