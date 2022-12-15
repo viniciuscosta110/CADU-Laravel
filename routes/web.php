@@ -36,6 +36,7 @@ Route::get('/details', function () {
 
 Route::get('/extensions', [ExtensionController::class, 'index']);
 
+Route::get('/login',[loginController::class, 'login']);
 Route::post('/login',[loginController::class, 'login']);
 
 Route::get('/subjects', function () {
