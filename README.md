@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img alt="BeTheHero" src="./llspublic/images/cadu.png" width="75%">
+  <img alt="Cadu" src="./llspublic/images/cadu.png" width="75%">
 </p>
 
 ## 💻 Projeto
