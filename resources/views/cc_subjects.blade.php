@@ -37,16 +37,17 @@
       <div class="mt-[68px] flex flex-col items-center">
         <div class="w-fit h-fit font-bold text-2xl flex flex-col items-center">
             <p class="py-9 px-10 bg-white rounded-[40px] border-4 border-[#4245DB] text-center">
-              <strong>Cinência da Computação</strong> <br/>
+              <strong>Ciência da Computação</strong> <br/>
               @if($id != null)
               <strong>{{ $id }}° Período</strong>
               @endif
             </p>
             <div id="content" class="flex flex-col gap-6 mt-9 font-bold">
-              
+<!--             @foreach ($subjects as $subject)
+            {{ $subject->title }}
+            @endforeach -->
             </div>
         </div>
     </div>
-    <script src="{{ URL::asset('js/cc_subjects.js'); }} "></script>
   </body>
 </html>

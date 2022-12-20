@@ -19,6 +19,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ResearchController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\ExtensionController;
+use App\Http\Controllers\SubjectController;
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -39,9 +40,5 @@ Route::get('/extensions', [ExtensionController::class, 'index']);
 Route::get('/login',[loginController::class, 'index']);
 Route::post('/login',[loginController::class, 'login']);
 
-Route::get('/ec_subjects/{id?}', function ($id = 1) {
-    return view('ec_subjects', ['id' => $id]);
-});
-Route::get('/cc_subjects/{id?}', function ($id = 1) {
-    return view('cc_subjects', ['id' => $id]);
-});
+Route::get('/ec_subjects/{id?}',[SubjectController::class, 'index_ec']);
+Route::get('/cc_subjects/{id?}',[SubjectController::class, 'index_cc']);
