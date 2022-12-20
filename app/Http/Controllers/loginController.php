@@ -8,18 +8,22 @@ use App\Models\User;
 class loginController extends Controller
 {
     public function index()
-    {
+    {    
         return view('login');
     }
 
     public function login(Request $request)
     {
-       $User = new User;
+       $user = User::where('name', '=', $request->username, 'and')->where('password', '=', $request->password)->first();
+     
+        if(is_null($user))
+        {
+            return view('login');
+        }
 
-       $User->name = $request->username;
-       $User->password = $request->password;
-
-       //logica do bd
-   
+        else
+        {
+            return redirect('/');
+        }
     }
 }
