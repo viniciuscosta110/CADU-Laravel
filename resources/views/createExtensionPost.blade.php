@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Home Post</title>
+    <title>Create Extension Post</title>
     <link rel="stylesheet" href="{{ URL::asset('css/global.css'); }} ">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -35,7 +35,7 @@
         </nav>
       </header>
       <div class="mt-[68px] ml-[184px]">
-        <form action="/home/create" method="POST" class="flex flex-col items-start gap-5">
+        <form action="/extensions/create" method="POST" class="flex flex-col items-start gap-5">
           @csrf
           <div class="flex flex-col w-[350px]">
             <label class="text-white">Título</label>

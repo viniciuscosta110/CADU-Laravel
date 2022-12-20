@@ -39,6 +39,8 @@ Route::get('/details', function () {
 });
 
 Route::get('/extensions', [ExtensionController::class, 'index']);
+Route::get('/extensions/create', [ExtensionController::class, 'create']);
+Route::post('/extensions/create', [ExtensionController::class, 'store']);
 
 Route::get('/login',[loginController::class, 'index']);
 Route::post('/login',[loginController::class, 'login']);
