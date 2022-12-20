@@ -39,6 +39,9 @@ Route::get('/extensions', [ExtensionController::class, 'index']);
 Route::get('/login',[loginController::class, 'index']);
 Route::post('/login',[loginController::class, 'login']);
 
-Route::get('/subjects', function () {
-    return view('subjects');
+Route::get('/ec_subjects/{id?}', function ($id = 1) {
+    return view('ec_subjects', ['id' => $id]);
+});
+Route::get('/cc_subjects/{id?}', function ($id = 1) {
+    return view('cc_subjects', ['id' => $id]);
 });
