@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes da disciplina</title>
     <link rel="icon" href="icons/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/global.css'); }} ">>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
