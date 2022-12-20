@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professores</title>
-    <link rel="stylesheet" href="{{ URL::asset('css/global.css'); }} ">>
+    <link rel="stylesheet" href="{{ URL::asset('css/global.css'); }} ">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="pb-28">
-      <header class="flex flex-row ml-8">
+      <header class="flex flex-row">
         <a href="/">
           <img src="{{ asset('images/green_logo.png') }}" alt="Logo image" class="w-40">
         </a>
