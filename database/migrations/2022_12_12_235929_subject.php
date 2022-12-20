@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('subjects', function (Blueprint $table) {
             $table->id()->autoIncrement();
             $table->string('title');
-            $table->string('description');
+            $table->string('description', 500);
             $table->integer('period');
             $table->string('course');
             $table->timestamp('created_at')->nullable();
