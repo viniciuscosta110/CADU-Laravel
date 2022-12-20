@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img alt="BeTheHero" src="./llspublic/images/cadu.png" width="75%">
+  <img alt="Cadu" src="https://raw.githubusercontent.com/viniciuscosta110/CADU-Laravel/master/public/images/green_logo.png" width="75%">
 </p>
 
 ## 💻 Projeto
