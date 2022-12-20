@@ -21,6 +21,8 @@ use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\ExtensionController;
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/create/home', [HomeController::class, 'create']);
+Route::post('/create/home', [HomeController::class, 'store']);
 
 Route::get('/teachers', [TeacherController::class, 'index']);
 
