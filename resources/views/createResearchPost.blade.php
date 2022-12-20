@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Home Post</title>
+    <title>Create Research Post</title>
     <link rel="stylesheet" href="{{ URL::asset('css/global.css'); }} ">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body">
+  <body>
     <div class="mb-28" >
       <header class="flex flex-row">
         <a href="/">
@@ -35,11 +35,11 @@
         </nav>
       </header>
       <div class="mt-[68px] ml-[184px]">
-        <form action="/create/home" method="POST" class="flex flex-col items-start gap-5">
+        <form action="/researchs/create" method="POST" class="flex flex-col items-start gap-5">
           @csrf
           <div class="flex flex-col w-[350px]">
-            <label class="text-white">Título</label>
-            <input type="text" name="title" id="title" placeholder="Título">
+            <label class="text-white">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Nome">
           </div>
 
           <div class="flex flex-col w-[350px]">

@@ -21,12 +21,14 @@ use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\ExtensionController;
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/create/home', [HomeController::class, 'create']);
-Route::post('/create/home', [HomeController::class, 'store']);
+Route::get('/home/create', [HomeController::class, 'create']);
+Route::post('/home/create', [HomeController::class, 'store']);
 
 Route::get('/teachers', [TeacherController::class, 'index']);
 
 Route::get('/researchs', [ResearchController::class, 'index']);
+Route::get('/researchs/create', [ResearchController::class, 'create']);
+Route::post('/researchs/create', [ResearchController::class, 'store']);
 
 Route::get('/courses', function () {
     return view('courses');
