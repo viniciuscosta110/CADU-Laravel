@@ -23,6 +23,7 @@ class loginController extends Controller
 
         else
         {
+            setcookie("Usuário_Logado", $request->username, time()+600);
             return redirect('/');
         }
     }
