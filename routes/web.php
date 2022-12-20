@@ -25,6 +25,8 @@ Route::get('/home/create', [HomeController::class, 'create']);
 Route::post('/home/create', [HomeController::class, 'store']);
 
 Route::get('/teachers', [TeacherController::class, 'index']);
+Route::get('/teachers/create', [TeacherController::class, 'create']);
+Route::post('/teachers/create', [TeacherController::class, 'store']);
 
 Route::get('/researchs', [ResearchController::class, 'index']);
 Route::get('/researchs/create', [ResearchController::class, 'create']);
