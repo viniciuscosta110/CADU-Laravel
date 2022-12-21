@@ -11,7 +11,7 @@ class SubjectController extends Controller
     {
         $subjects = Subject::where('course','=','ec')->where('period','=',$id)->get();
 
-        return view('cc_subjects', ['id' => $id, 'subjects' => $subjects]);
+        return view('ec_subjects', ['id' => $id, 'subjects' => $subjects]);
     }
 
     public function index_cc($id)
