@@ -43,10 +43,13 @@
               @endif
             </p>
             <div id="content" class="flex flex-col gap-6 mt-9 font-bold">
-              
+              @foreach ($subjects as $subject)
+                @if($subject != null)
+                  <a class="text-center text-white" href="{{ 'http://127.0.0.1:8000/details' . '/' . $subject->id }}">{{ $subject->title }}</a>
+                @endif
+              @endforeach
             </div>
         </div>
     </div>
-    <script src="{{ URL::asset('js/ec_subjects.js'); }} "></script>
   </body>
 </html>
