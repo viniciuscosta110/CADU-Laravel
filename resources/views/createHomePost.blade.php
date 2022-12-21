@@ -34,27 +34,27 @@
           </a>
         </nav>
       </header>
-      <div class="mt-[68px] ml-[184px]">
-        <form action="/home/create" method="POST" class="flex flex-col items-start gap-5">
+      <div class="mt-[68px] flex items-center justify-center">
+        <form action="/home/create" method="POST" class="flex flex-col items-start gap-5 bg-white p-5 rounded border-[#4245DB] border-4">
           @csrf
           <div class="flex flex-col w-[350px]">
-            <label class="text-white">Título</label>
-            <input type="text" name="title" id="title" placeholder="Título">
+            <label >Título</label>
+            <input type="text" name="title" id="title" placeholder="Título" class="border-2 border-black rounded p-2">
           </div>
 
           <div class="flex flex-col w-[350px]">
-            <label class="text-white">Descrição</label>
+            <label >Descrição</label>
             <textarea class="min-h-[100px]" name="description" id="description" placeholder="Descrição">
 
             </textarea>
           </div>
           <div class="flex flex-col w-[350px]">
-            <label class="text-white">Imagem</label>
+            <label >Imagem</label>
             <input type="text" name="image" id="image" placeholder="Imagem">
           </div>
           
           <div class="flex flex-col w-[350px]">
-            <label class="text-white">Link</label>
+            <label >Link</label>
             <input type="text" name="link" id="link" placeholder="Link">
           </div>
 

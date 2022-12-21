@@ -34,28 +34,28 @@
           </a>
         </nav>
       </header>
-      <div class="mt-[68px] ml-[184px]">
-        <form action="/teachers/create" method="POST" class="flex flex-col items-start gap-5">
+      <div class="mt-[68px] flex items-center justify-center">
+        <form action="/teachers/create" method="POST" class="flex flex-col items-start gap-5 bg-white p-5 rounded border-[#4245DB] border-4">
           @csrf
           <div class="flex flex-col w-[350px]">
-            <label class="text-white">Nome</label>
-            <input type="text" name="name" id="name" placeholder="Nome">
+            <label >Nome</label>
+            <input type="text" name="name" id="name" placeholder="Nome" class="border-2 border-black rounded p-2">
           </div>
 
           <div class="flex flex-col w-[350px]">
-            <label class="text-white">Descrição</label>
-            <textarea class="min-h-[100px]" name="description" id="description" placeholder="Descrição">
+            <label >Descrição</label>
+            <textarea class="min-h-[100px]" name="description" id="description" placeholder="Descrição" class="border-2 border-black rounded p-2">
 
             </textarea>
           </div>
           <div class="flex flex-col w-[350px]">
-            <label class="text-white">Imagem</label>
-            <input type="text" name="image" id="image" placeholder="Imagem">
+            <label >Imagem</label>
+            <input type="text" name="image" id="image" placeholder="Imagem" class="border-2 border-black rounded p-2">
           </div>
           
           <div class="flex flex-col w-[350px]">
-            <label class="text-white">Link</label>
-            <input type="text" name="link" id="link" placeholder="Link">
+            <label >Link</label>
+            <input type="text" name="link" id="link" placeholder="Link" class="border-2 border-black rounded p-2">
           </div>
 
           <button class="p-2 border-4 border-[#4245DB] bg-white rounded" type="submit">Enviar</button>
