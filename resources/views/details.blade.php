@@ -17,9 +17,9 @@
         </a>
         
         <nav class="flex gap-20 text-[#FFFFFF] mt-[60px] ml-[72px]" role="group" aria-label="Basic outlined example">
-          <a class="w-full h-full flex flex-col items-center font-bold text-[#1D1E8F]" href="/details.html">
+          <a class="w-full h-full flex flex-col items-center font-bold" href="/courses">
             Aulas
-            <span class="h-1 w-[100px] bg-[#1D1E8F]"></span>
+            <span class="h-1 w-[100px] bg-[#fff]"></span>
           </a>
           <a class="w-full h-full flex flex-col items-center font-bold" href="/teachers">
             Professores

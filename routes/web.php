@@ -20,6 +20,7 @@ use App\Http\Controllers\ResearchController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\ExtensionController;
 use App\Http\Controllers\SubjectController;
+use App\Http\Controllers\DetailController;
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -31,9 +32,8 @@ Route::get('/courses', function () {
     return view('courses');
 });
 
-Route::get('/details', function () {
-    return view('details');
-});
+Route::get('/details', [DetailController::class, 'index']);
+Route::get('/details/{id?}', [DetailController::class, 'find']);
 
 Route::get('/extensions', [ExtensionController::class, 'index']);
 
