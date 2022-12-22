@@ -19,6 +19,10 @@ return new class extends Migration
             $table->string('description');
             $table->integer('period');
             $table->string('course');
+            $table->string('room');
+            $table->string('teacher');
+            $table->string('contacts');
+            $table->string('links')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });

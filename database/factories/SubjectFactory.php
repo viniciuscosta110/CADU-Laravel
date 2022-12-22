@@ -24,6 +24,10 @@ class SubjectFactory extends Factory
             'description' => fake()->paragraph(),
             'period' => fake()->numberBetween(1, 10),
             'course' => $courses[fake()->numberBetween(0, 1)],
+            'room' => fake()->randomLetter() . fake()->numberBetween(1, 500),
+            'teacher' => fake()->name(),
+            'contacts' => fake()->email() . ", " . fake()->phoneNumber(),
+            'links' => fake()->url() . ", " . fake()->url(),
             'created_at' => fake()->dateTime(),
             'updated_at' => fake()->dateTime(),
         ];

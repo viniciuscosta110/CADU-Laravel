@@ -25,7 +25,8 @@ class Subject extends Model
         'course',
         'room',
         'teacher',
-        'contacts,'
+        'contacts',
+        'links',
     ];
     
     protected $casts = [
