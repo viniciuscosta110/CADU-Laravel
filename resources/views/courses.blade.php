@@ -49,8 +49,7 @@
               <a href="/ec_subjects/7" class="w-2/4 text-center text-white">7º Período</a>
               <a href="/ec_subjects/8" class="w-2/4 text-center text-white">8º Período</a>
               <a href="/ec_subjects/9" class="w-2/4 text-center text-white">9º Período</a>
-              <a href="/ec_subjects/10" class="w-2/4 text-center text-white">10º Período</a>
-              <a href="/ec_subjects" class="w-2/4 text-center text-white"> Eletivas</a>
+              <a href="/ec_subjects/10" class="w-2/4 text-center text-white">10º Período</a>              
             </div>
         </div>
         <div>
@@ -66,7 +65,6 @@
               <a href="/cc_subjects/6" class="w-2/4 text-center text-white">6º Período</a>
               <a href="/cc_subjects/7" class="w-2/4 text-center text-white">7º Período</a>
               <a href="/cc_subjects/8" class="w-2/4 text-center text-white">8º Período</a>
-              <a href="/cc_subjects/" class="w-2/4 text-center text-white"> Eletivas</a>
             </div>
         </div>
     </div>
