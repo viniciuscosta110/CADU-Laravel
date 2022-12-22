@@ -16,13 +16,13 @@ return new class extends Migration
         Schema::create('subjects', function (Blueprint $table) {
             $table->id()->autoIncrement();
             $table->string('title');
-            $table->string('description');
+            $table->string('description', 400);
             $table->integer('period');
             $table->string('course');
             $table->string('room');
             $table->string('teacher');
-            $table->string('contacts');
-            $table->string('links')->nullable();
+            $table->string('contacts', 400);
+            $table->string('links', 400)->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });
