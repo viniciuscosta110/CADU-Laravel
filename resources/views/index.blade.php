@@ -15,27 +15,28 @@
           <img src="{{ asset('images/green_logo.png') }}" alt="Logo image" class="w-40">
         </a>
         
-        <nav class="flex gap-20 text-[#FFFFFF] mt-[60px] ml-[72px]" role="group" aria-label="Basic outlined example">
-          <a class="w-full h-full flex flex-col items-center font-bold" href="/courses">
+        <nav class="flex flex-1 gap-20 text-[#FFFFFF] mt-[60px] ml-[72px]" role="group" aria-label="Basic outlined example">
+          <a class="w-fit h-full flex flex-col items-center font-bold" href="/courses">
             Aulas
             <span class="h-1 w-[100px] bg-[#fff]"></span>
           </a>
-          <a class="w-full h-full flex flex-col items-center font-bold" href="/teachers">
+          <a class="w-fit h-full flex flex-col items-center font-bold" href="/teachers">
             Professores
             <span class="h-1 w-[100px] bg-[#fff]"></span>
           </a>
-          <a class="w-full h-full flex flex-col items-center font-bold" href="/researchs">
+          <a class="w-fit h-full flex flex-col items-center font-bold" href="/researchs">
             Pesquisa
             <span class="h-1 w-[100px] bg-[#fff]"></span>
           </a>
-          <a class="w-full h-full flex flex-col items-center font-bold" href="/extensions">
+          <a class="w-fit h-full flex flex-col items-center font-bold" href="/extensions">
             Extensão
             <span class="h-1 w-[100px] bg-[#fff]"></span>
           </a>
-          <a class="w-full h-full flex flex-col items-center font-bold" href="/login">
-            Login
-            <span class="h-1 w-[100px] bg-[#fff]"></span>
-          </a>
+          <div class="w-full flex justify-end align-top mr-10">
+            <a class="h-fit text-black items-center font-bold py-2 px-4 border-4 border-[#4245DB] bg-white rounded" href="/login">
+              Login
+            </a>
+          </div>
         </nav>
       </header>
       <div class="mt-[68px] ml-[184px] flex flex-col gap-10">
