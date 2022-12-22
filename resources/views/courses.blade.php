@@ -40,17 +40,17 @@
                 <strong>Engenharia da Computação</strong>
             </p>
             <div class="flex flex-col gap-6 mt-9 font-bold">
-              <a href="/subjects" class="w-2/4 text-center text-white">1º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">2º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">3º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">4º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">5º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">6º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">7º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">8º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">9º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">10º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white"> Eletivas</a>
+              <a href="/ec_subjects/1" class="w-2/4 text-center text-white">1º Período</a>
+              <a href="/ec_subjects/2" class="w-2/4 text-center text-white">2º Período</a>
+              <a href="/ec_subjects/3" class="w-2/4 text-center text-white">3º Período</a>
+              <a href="/ec_subjects/4" class="w-2/4 text-center text-white">4º Período</a>
+              <a href="/ec_subjects/5" class="w-2/4 text-center text-white">5º Período</a>
+              <a href="/ec_subjects/6" class="w-2/4 text-center text-white">6º Período</a>
+              <a href="/ec_subjects/7" class="w-2/4 text-center text-white">7º Período</a>
+              <a href="/ec_subjects/8" class="w-2/4 text-center text-white">8º Período</a>
+              <a href="/ec_subjects/9" class="w-2/4 text-center text-white">9º Período</a>
+              <a href="/ec_subjects/10" class="w-2/4 text-center text-white">10º Período</a>
+              <a href="/ec_subjects" class="w-2/4 text-center text-white"> Eletivas</a>
             </div>
         </div>
         <div>
@@ -58,15 +58,15 @@
                 <strong>Ciência da Computação</strong>
             </p>
             <div class="flex flex-col gap-6 mt-9 font-bold">
-              <a href="/subjects" class="w-2/4 text-center text-white">1º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">2º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">3º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">4º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">5º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">6º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">7º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white">8º Período</a>
-              <a href="/subjects" class="w-2/4 text-center text-white"> Eletivas</a>
+              <a href="/cc_subjects/1" class="w-2/4 text-center text-white">1º Período</a>
+              <a href="/cc_subjects/2" class="w-2/4 text-center text-white">2º Período</a>
+              <a href="/cc_subjects/3" class="w-2/4 text-center text-white">3º Período</a>
+              <a href="/cc_subjects/4" class="w-2/4 text-center text-white">4º Período</a>
+              <a href="/cc_subjects/5" class="w-2/4 text-center text-white">5º Período</a>
+              <a href="/cc_subjects/6" class="w-2/4 text-center text-white">6º Período</a>
+              <a href="/cc_subjects/7" class="w-2/4 text-center text-white">7º Período</a>
+              <a href="/cc_subjects/8" class="w-2/4 text-center text-white">8º Período</a>
+              <a href="/cc_subjects/" class="w-2/4 text-center text-white"> Eletivas</a>
             </div>
         </div>
     </div>

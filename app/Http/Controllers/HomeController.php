@@ -16,4 +16,20 @@ class HomeController extends Controller
         
         return view('index', ['posts' => $posts]);
     }
+
+    public function create() {
+        return view('createHomePost');
+    }
+
+    public function store(Request $request) {
+        $post = new HomePost();
+        
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->image = $request->image;
+        $post->link = $request->link;
+        $post->save();
+
+        return redirect('/');
+    }
 }

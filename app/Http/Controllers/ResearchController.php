@@ -14,4 +14,22 @@ class researchController extends Controller
 
         return view('researchs', ['researchs' => $researchs]);
     }
+
+    public function create()
+    {
+        return view('createResearchPost');
+    }
+
+    public function store(Request $request)
+    {
+        $research = new ResearchPost();
+
+        $research->name = $request->name;
+        $research->description = $request->description;
+        $research->image = $request->image;
+        $research->link = $request->link;
+        $research->save();
+
+        return redirect('/researchs');
+    }
 }

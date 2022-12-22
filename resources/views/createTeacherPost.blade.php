@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Create Teacher Post</title>
     <link rel="stylesheet" href="{{ URL::asset('css/global.css'); }} ">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="mb-28">
+  <body">
+    <div class="mb-28" >
       <header class="flex flex-row">
         <a href="/">
           <img src="{{ asset('images/green_logo.png') }}" alt="Logo image" class="w-40">
@@ -32,19 +32,34 @@
             Extensão
             <span class="h-1 w-[100px] bg-[#fff]"></span>
           </a>
-          <a class="w-full h-full flex flex-col items-center font-bold" href="/login">
-            Login
-            <span class="h-1 w-[100px] bg-[#fff]"></span>
-          </a>
         </nav>
       </header>
-      <div class="mt-[68px] ml-[184px] flex flex-col gap-10">
-        @foreach($posts as $post)
-          <article class="w-fit px-20 py-7 bg-white flex gap-[140px] rounded-[40px] border-4 border-[#4245DB] items-center">
-            <p id="description" class="w-[400px] text-2xl">{{ $post->description }}</p>
-            <img src="{{ $post->image }}" alt="${item.alt}" class="w-[200px] h-[200px] rounded-xl">
-          </article>
-        @endforeach 
+      <div class="mt-[68px] flex items-center justify-center">
+        <form action="/teachers/create" method="POST" class="flex flex-col items-start gap-5 bg-white p-5 rounded border-[#4245DB] border-4">
+          @csrf
+          <div class="flex flex-col w-[350px]">
+            <label >Nome</label>
+            <input type="text" name="name" id="name" placeholder="Nome" class="border-2 border-black rounded p-2">
+          </div>
+
+          <div class="flex flex-col w-[350px]">
+            <label >Descrição</label>
+            <textarea class="min-h-[100px]" name="description" id="description" placeholder="Descrição" class="border-2 border-black rounded p-2">
+
+            </textarea>
+          </div>
+          <div class="flex flex-col w-[350px]">
+            <label >Imagem</label>
+            <input type="text" name="image" id="image" placeholder="Imagem" class="border-2 border-black rounded p-2">
+          </div>
+          
+          <div class="flex flex-col w-[350px]">
+            <label >Link</label>
+            <input type="text" name="link" id="link" placeholder="Link" class="border-2 border-black rounded p-2">
+          </div>
+
+          <button class="p-2 border-4 border-[#4245DB] bg-white rounded" type="submit">Enviar</button>
+        </form>
       </div>
     </div>
   <!-- <script src="/js/index.js"></script> -->
