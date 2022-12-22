@@ -45,7 +45,7 @@ Route::get('/extensions', [ExtensionController::class, 'index']);
 Route::get('/extensions/create', [ExtensionController::class, 'create']);
 Route::post('/extensions/create', [ExtensionController::class, 'store']);
 
-Route::get('/login',[loginController::class, 'index']);
+Route::get('/login', [loginController::class, 'index']);
 Route::post('/login',[loginController::class, 'login']);
 
 Route::get('/ec_subjects/{id?}',[SubjectController::class, 'index_ec']);
