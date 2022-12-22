@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Disciplinas</title>
     <link rel="stylesheet" href="{{ URL::asset('css/global.css'); }} ">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="mb-28">
+    <div class="pb-28">
       <header class="flex flex-row">
         <a href="/">
           <img src="{{ asset('images/green_logo.png') }}" alt="Logo image" class="w-40">
         </a>
         
         <nav class="flex gap-20 text-[#FFFFFF] mt-[60px] ml-[72px]" role="group" aria-label="Basic outlined example">
-          <a class="w-full h-full flex flex-col items-center font-bold" href="/courses">
+          <a class="w-full h-full flex flex-col items-center font-bold text-[#1D1E8F]" href="/courses">
             Aulas
-            <span class="h-1 w-[100px] bg-[#fff]"></span>
+            <span class="h-1 w-[100px] bg-[#1D1E8F]"></span>
           </a>
           <a class="w-full h-full flex flex-col items-center font-bold" href="/teachers">
             Professores
@@ -32,21 +32,24 @@
             Extensão
             <span class="h-1 w-[100px] bg-[#fff]"></span>
           </a>
-          <a class="w-full h-full flex flex-col items-center font-bold" href="/login">
-            Login
-            <span class="h-1 w-[100px] bg-[#fff]"></span>
-          </a>
         </nav>
       </header>
-      <div class="mt-[68px] ml-[184px] flex flex-col gap-10">
-        @foreach($posts as $post)
-          <article class="w-fit px-20 py-7 bg-white flex gap-[140px] rounded-[40px] border-4 border-[#4245DB] items-center">
-            <p id="description" class="w-[400px] text-2xl">{{ $post->description }}</p>
-            <img src="{{ $post->image }}" alt="${item.alt}" class="w-[200px] h-[200px] rounded-xl">
-          </article>
-        @endforeach 
-      </div>
+      <div class="mt-[68px] flex flex-col items-center">
+        <div class="w-fit h-fit font-bold text-2xl flex flex-col items-center">
+            <p class="py-9 px-10 bg-white rounded-[40px] border-4 border-[#4245DB] text-center">
+              <strong>Ciência da Computação</strong> <br/>
+              @if($id != null)
+              <strong>{{ $id }}° Período</strong>
+              @endif
+            </p>
+            <div id="content" class="flex flex-col gap-6 mt-9 font-bold">
+            @foreach ($subjects as $subject)
+              @if($subject != null)
+                <a class="text-center text-white" href="{{ 'http://127.0.0.1:8000/details' . '/' . $subject->id }}">{{ $subject->title }}</a>
+              @endif
+            @endforeach
+            </div>
+        </div>
     </div>
-  <!-- <script src="/js/index.js"></script> -->
   </body>
 </html>
