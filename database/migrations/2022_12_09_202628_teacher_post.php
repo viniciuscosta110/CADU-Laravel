@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('teacher_posts', function (Blueprint $table) {
             $table->id()->autoIncrement();
             $table->string('name');
-            $table->string('description');
+            $table->string('description', 500);
             $table->string('link');
-            $table->string('image')->nullable();
+            $table->string('image', 400)->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });

@@ -23,10 +23,16 @@ use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\DetailController;
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/home/create', [HomeController::class, 'create']);
+Route::post('/home/create', [HomeController::class, 'store']);
 
 Route::get('/teachers', [TeacherController::class, 'index']);
+Route::get('/teachers/create', [TeacherController::class, 'create']);
+Route::post('/teachers/create', [TeacherController::class, 'store']);
 
 Route::get('/researchs', [ResearchController::class, 'index']);
+Route::get('/researchs/create', [ResearchController::class, 'create']);
+Route::post('/researchs/create', [ResearchController::class, 'store']);
 
 Route::get('/courses', function () {
     return view('courses');
@@ -36,6 +42,8 @@ Route::get('/details', [DetailController::class, 'index']);
 Route::get('/details/{id?}', [DetailController::class, 'find']);
 
 Route::get('/extensions', [ExtensionController::class, 'index']);
+Route::get('/extensions/create', [ExtensionController::class, 'create']);
+Route::post('/extensions/create', [ExtensionController::class, 'store']);
 
 Route::get('/login',[loginController::class, 'index']);
 Route::post('/login',[loginController::class, 'login']);
