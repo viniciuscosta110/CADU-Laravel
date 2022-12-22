@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Detail;
+use App\Models\Subject;
 
 class detailController extends Controller
 {
@@ -15,6 +15,8 @@ class detailController extends Controller
 
     public function find($id)
     {
-        return view('details', ['id' => $id]);
+        $subject = Subject::where('id', $id)->first();
+
+        return view('details', ['subject' => $subject]);
     }
 }
